@@ -1,0 +1,30 @@
+package ticketprice;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author HASSAN ABAJARA
+ */
+public class TicketPrice {
+    public static void main(String[] args) {
+        Scanner showbiz = new Scanner (System.in);
+        int age; 
+        double price = 0.00;
+        System.out.println("How old are you?");
+        age=showbiz.nextInt();
+        if( age >= 18 && age < 65){
+            price = 12.00;
+        }        
+        else if ( age >=65){
+            price = 15.00;
+        }
+        
+        else {
+            System.out.println("little kid!");
+    }
+        System.out.println("please pay $");
+        System.out.println(price);
+        System.out.println("enjoy the show!");
+    }
+}
